@@ -1,0 +1,412 @@
+:root{
+    --headerclr:#222533;
+    --mainclr:#ffcb0f;
+}
+
+
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.header{
+    padding: 2rem 7%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--headerclr);
+}
+
+.logo{
+    color: var(--mainclr);
+    font-size: 30px;
+}
+
+.nav a {
+    color: white;
+    font-size: 1.rem;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    transition: .5s;
+    font-weight: 600;
+}
+
+.nav a:hover{
+   color: var(--mainclr);
+}
+
+.icon-header div{
+    color: white;
+    margin-left: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.icon-header div:hover{
+color: var(--mainclr);
+}
+
+#menu-bar{
+    display: none;
+}
+
+.nav.active{
+    top: 100%;
+}
+
+.search-form{
+    width: 50%;
+    position: absolute;
+    top: -110%;
+    right: 2rem;
+}
+
+.search-form input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 15px;
+    border: 1px solid var(--headerclr);
+
+}
+
+.search-form.active{
+    top: 110%;
+}
+
+.background-image{
+    background: url(kamion2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.inner-back-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-bottom: 30px;
+}
+
+.inner-back-text h1{
+    font-size: 60px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.inner-back-text h1 span{
+    color: var(--mainclr);
+    
+}
+
+.first-btn, .second-btn{
+    padding: 1rem 3rem;
+    background: var(--mainclr);
+    color: var(--headerclr);
+    border-radius: 15px;
+
+}
+
+.first-btn:hover{
+    background: var(--headerclr);
+    color: white;
+}
+
+ .second-btn:hover{
+    background: var(--headerclr);
+    color: white;
+}
+   
+
+.welcome{
+    padding: 3rem 7%;
+
+}
+
+.main-welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.welcome-text h1{
+    font-size: 40px;
+    color: var(--mainclr);
+    margin-bottom: 25px;
+}
+
+.welcome-text a{
+    padding: 1rem 2rem;
+    background: var(--mainclr);
+    color: var(--headerclr);
+    border-radius: 15px;
+    font-size: 1.5rem;
+
+}
+
+.welcome-text a:hover{
+    background: var(--headerclr);
+    color: white;
+}
+
+.chose-us{
+    padding: 3rem 7%;
+    background-color: turquoise;
+}
+
+.chose-us h1{
+    color: var(--headerclr);
+    font-size: 40px;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.chose-us h2{
+    text-align: center;
+    color: var(--headerclr);
+}
+
+.chose-us h1 span{
+    color: var(--mainclr);
+}
+
+.main-choice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.inner-choice{
+    flex: 1 1 200px;
+}
+
+.choice-icon{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border: 2px solid var(--mainclr);
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+.choice-icon i{
+    font-size: 40px;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.choice-icon i:hover{
+    color: var(--headerclr);
+    transform: translateY(-25px);
+}
+
+.inner-choice h2{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.our-services{
+    padding: 3rem 7%;
+}
+
+.our-services h1{
+    color: var(--headerclr);
+    font-size: 40px;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.our-services h1 span{
+    color: var(--mainclr);
+}
+
+.main-service{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.inner-service{
+    flex: 1 1 300px;
+}
+
+.inner-service h2{
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+
+.inner-service p{
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.inner-service a{
+    padding: 1.5 rem 3rem;
+    background: var(--mainclr);
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.inner-service img{
+    width: 80%;
+}
+
+.buton1{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background: var(--mainclr);
+    cursor: pointer;
+}
+
+.buton1:hover{
+    background: var(--headerclr);
+}
+
+.buton2{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background: var(--mainclr);
+    cursor: pointer;
+}
+
+.buton2:hover{
+    background: var(--headerclr);
+}
+
+.buton3{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background: var(--mainclr);
+    cursor: pointer;
+}
+
+.buton3:hover{
+    background: var(--headerclr);
+}
+
+.customer-review{
+    padding: 4rem 7%;
+}
+
+.customer-review h1{
+    color: var(--headerclr);
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.customer-review h1 span{
+    color: var(--mainclr);
+}
+
+.main-review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+.inner-review{
+    flex:  1 1 300px;
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+footer {
+    background-color: var(--mainclr);
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .footer-content h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-content ul {
+    list-style-type: none;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footer-content ul li {
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: var(--headerclr);
+  }
+  
+  .footer-content ul li:before {
+    content: "\2022"; /* Bullet point */
+    color: #fff;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+
+
+
+
+
+
+@media (max-width:767px){
+    html{
+        font-size: 55%;
+    }
+    #menu-bar{
+        display: initial;
+    }
+    .header{
+        padding: 2rem;
+    }
+    .nav{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0%;
+        top: -1000%;
+        box-shadow: rgba(20, 20, 20, 0.24) 0px 3px 8px;
+        border-radius: 0px;
+        background-color: rgb(42, 85, 83);
+
+    }
+    .nav a{
+        color: white;
+        display: block;
+        margin: 1rem;
+        font-size: 1.7rem;
+        float: right;
+    }
+}
